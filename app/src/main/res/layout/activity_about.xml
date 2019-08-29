@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="About"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="36sp" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:autoText="false"
+            android:maxLines="500"
+            android:text="Developed by Andrew McDonald, Shay Ladd, Donovan Cool, and Gith Kumar in what began as a class project for Michigan State University’s “EGR 100: Introduction to Engineering Design” course, Spartan Grades aims to provide a user-friendly Android-native client for the interpretation of aggregate GPA data released each semester by Michigan State University since 2011. By enabling users to conduct their own analyses on the publicly-available data, Spartan Grades seeks to inform and provide quantitative insight to students scheduling their future courses.\n\nWhile GPA data provides a somewhat objective measure of course difficulty, users must remember that a multitude of factors go into determining a course’s grade distribution, and that the average GPA of a course is not directly correlated with its difficulty, workload, nor level of benefit to the student. Thus, while we encourage users to enjoy using Spartan Grades, we also encourage users to weigh the insights it provides as only a single factor in the many that should be considered when scheduling classes and laying out one’s four-year-plan.\n\nThe development team would like to acknowledge MSU graduate and msugrades.com developer Collin Dillinger, whose website provided the direct inspiration for the creation of this app. Furthermore, we thank Austin and Jennifer Walters for taking the initial steps to make MSU’s GPA data publicly available through FOIA requests, along with Professor Jenahvive Morgan and Ms. Roya Solhmirzaei for their guidance throughout the initial app development process in EGR 100.\n\nWe welcome comments, suggestions, feedback, and inquiries via email to andrewmcdonald27@gmail.com, or via LinkedIn.\n\nEnjoy the app, and Go Green!\n\nDisclaimer: Michigan State University and MSU are trademarks of Michigan State University. This application is not affiliated with or endorsed by Michigan State University.\n\n"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
